@@ -22,7 +22,7 @@ public:
             }else if(val == -1){
                 r = mid-1;
             }
-            else{
+            else if(val == 1){
                 l = mid+1;
             }
         }
