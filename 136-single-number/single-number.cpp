@@ -3,7 +3,6 @@ public:
     int singleNumber(vector<int>& nums) {
         
         int size = nums.size();
-        int a;
         
         for(int i = 0; i <= size; i++){
             int x = nums[i];
@@ -11,8 +10,7 @@ public:
             if(cnt == 1){
                 return x;
             }
-            a = x;
         }
-        return a;
+        return -1;
     }
 };
