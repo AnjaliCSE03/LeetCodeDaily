@@ -5,7 +5,7 @@ public:
         sort(nums.begin(), nums.end());
         int size = nums.size();
 
-        for(int i = 0; i < size; i++){
+        while(size != 0){
             int smallest = nums[0];
             int largest = nums[size-1];
 
