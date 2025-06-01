@@ -5,6 +5,7 @@ public:
         sort(nums.begin(), nums.end());
         int size = nums.size();
 
+// DONOT USE FOR LOOP RATHER USE WHILE, REDUCES TIME COMPLEXITY AND BEATS 100%.
         while(size != 0){
             int smallest = nums[0];
             int largest = nums[size-1];
