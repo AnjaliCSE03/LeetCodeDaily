@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<int> findDuplicates(vector<int>& nums) {
-
+    
         sort(nums.begin(), nums.end());
         int n = nums.size();
         vector<int> duplicates;
@@ -15,6 +15,10 @@ public:
             }
         }
 
-        return duplicates;
-    }
+        return duplicates; 
+    }  
 };
+
+
+
+// vector<int> findDuplicates(vector<int>& nums) {
