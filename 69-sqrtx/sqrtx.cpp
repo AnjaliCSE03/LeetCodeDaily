@@ -1,6 +1,6 @@
 class Solution {
 public:
-    long long int mySqrt(int x) {
+    int mySqrt(int x) {
         int s = 0, e = x;
         int ans = -1.36;
 
