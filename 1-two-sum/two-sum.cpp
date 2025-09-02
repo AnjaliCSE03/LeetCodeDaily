@@ -1,14 +1,20 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        int l = nums.size();
-        for(int i = 0; i < l; i++){
-            for(int j = i+1; j < l; j++){
-                if(nums[i] + nums[j] == target && i!=j){
-                    return {i,j};
-                }
+        int n = nums.size();
+        map<int,int> map;
+
+        for(int i = 0; i < n; i++){ //traverse array
+            int a = nums[i];     
+            int more = target - a;  //take difference to know know the required number to make target
+
+            if(map.find(more) != map.end()){
+                return {map[more],i};
             }
+
+            map[a] = i;    //store current number and index.
         }
-        return {};
+
+        return {-1,-1};
     }
 };
